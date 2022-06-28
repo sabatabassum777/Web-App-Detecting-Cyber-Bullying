@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BULLY-COMMENTS-CLASSIFIER</title>
+    <link rel="stylesheet" href="../static/css/style.css" >
+</head>
+<body>
+<center>
+    <div>
+        <h1> 🛑 STOP CYBER BULLYING 🛑</h1>
+    </div>
+    <form action="./predict" method="POST">
+        <table>
+            <h2><i>Comment Classifier</i></h2>
+            <tr>
+                <td>
+                    <label for="content"></label>
+                </td>
+                <td></td><h6>Paste the Comment in the below text box and click on the button to Predict </h6></td>
+                <td>
+                    <textarea id="content" name="content" rows="6" cols="50" placeholder="Paste or Enter the Comment Here... "></textarea>
+                </td>
+            </tr>
+             <tr>
+                <td colspan="3">
+                    <input  id="btn" type="submit"  value="Predict"/>
+                </td>
+            </tr>
+        </table>
+         <p>Prediction: {{pred}}</p>
+        <p>Toxic Probability: {{prob}}</p>
+    </form>
+</center>
+</body>
+</html>
